@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA530652279D55CF0081623D /* UIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA530651279D55CF0081623D /* UIScreen.swift */; };
 		EA8269A7279C377100F4A1DF /* UniversalGravitationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8269A6279C377100F4A1DF /* UniversalGravitationApp.swift */; };
 		EA8269A9279C377100F4A1DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8269A8279C377100F4A1DF /* ContentView.swift */; };
 		EA8269AB279C377200F4A1DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA8269AA279C377200F4A1DF /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA530651279D55CF0081623D /* UIScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreen.swift; sourceTree = "<group>"; };
 		EA8269A3279C377100F4A1DF /* UniversalGravitation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalGravitation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA8269A6279C377100F4A1DF /* UniversalGravitationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalGravitationApp.swift; sourceTree = "<group>"; };
 		EA8269A8279C377100F4A1DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA530650279D55BE0081623D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA530651279D55CF0081623D /* UIScreen.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		EA82699A279C377100F4A1DF = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				EA8269A6279C377100F4A1DF /* UniversalGravitationApp.swift */,
+				EA530650279D55BE0081623D /* Utils */,
 				EA8269D0279C3D5A00F4A1DF /* Views */,
 				EA8269AA279C377200F4A1DF /* Assets.xcassets */,
 				EA8269D3279C423F00F4A1DF /* Image Data */,
@@ -283,6 +294,7 @@
 				EA8269D2279C3D8200F4A1DF /* HomeView.swift in Sources */,
 				EA8269A9279C377100F4A1DF /* ContentView.swift in Sources */,
 				EA8269A7279C377100F4A1DF /* UniversalGravitationApp.swift in Sources */,
+				EA530652279D55CF0081623D /* UIScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,16 +21,16 @@ struct HomeView: View {
         VStack {
             Text("万有引力の法則")
                 .font(.title)
-                .padding(.bottom, 20)
+                .padding(.bottom, UIScreen.screenWidth * 0.053)
             
             VStack {
                 TextField("Mの重さ", text: self.$M)
                 TextField("mの重さ", text: self.$m)
                 TextField("半径", text: self.$r)
             }
-            .frame(width: 200, height: 100)
+            .frame(width: UIScreen.screenWidth * 0.53, height: UIScreen.screenWidth * 0.267)
             .textFieldStyle(RoundedBorderTextFieldStyle())
-            .padding(.bottom, 30)
+            .padding(.bottom, UIScreen.screenWidth * 0.08)
             
             HStack {
                 Button(action: {
@@ -38,7 +38,7 @@ struct HomeView: View {
                 }) {
                     RoundedRectangle(cornerRadius: 9.0)
                         .fill(Color.blue)
-                        .frame(width: 120, height: 50)
+                        .frame(width: UIScreen.screenWidth * 0.32, height: UIScreen.screenWidth * 0.13)
                         .overlay(
                             Text("Caluculate")
                                 .foregroundColor(Color.white)
@@ -50,18 +50,19 @@ struct HomeView: View {
                 }) {
                     RoundedRectangle(cornerRadius: 9.0)
                         .fill(Color.red)
-                        .frame(width: 120, height: 50)
+                        .frame(width: UIScreen.screenWidth * 0.32, height: UIScreen.screenWidth * 0.13)
                         .overlay(
                             Text("Clear")
                                     .foregroundColor(Color.white)
                         )
                 }
-            }.padding(.bottom, 10)
+            }.padding(.bottom, UIScreen.screenWidth * 0.0267)
             
-            Text("万有引力 \(Force)")
+            
+            Text("計算結果 \(Force)")
             Image("image")
                 .resizable()
-                .frame(width: 175, height: 175)
+                .frame(width: UIScreen.screenWidth * 0.467, height: UIScreen.screenWidth * 0.467)
             Spacer()
         }
     }
